@@ -1,8 +1,8 @@
 const scriptURL = "https://script.google.com/macros/s/AKfycbx2QXTygm9onbh_0qCpuIzAfq5yHPmVX10swloh1ip79m-gratE6SHLnSVu8nqKZ7Ep/exec"
 
-function sendAttendace(action) {
-    const employeeID = document.getElementById("employeeID").ariaValueMax;
-    const name = document.getElementById("name").ariaValueMax;
+function sendAttendance(action) {
+    const employeeID = document.getElementById("employeeID").value;
+    const name = document.getElementById("name").value;
 
     if(!employeeID || !name){
         alert("Please enter your EmployeeID and Name.");
