@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbx2QXTygm9onbh_0qCpuIzAfq5yHPmVX10swloh1ip79m-gratE6SHLnSVu8nqKZ7Ep/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbypCF-yspudg-dgpIfTOjfhi4Oux8wooECP_EZgOFUP7hPwgRNa93glXmzMqD37CStt/exec";
 
 function sendAttendance(action) {
     const employeeID = document.getElementById("employeeID").value;
