@@ -15,8 +15,15 @@ function sendAttendance(action) {
         headers: { "Content-Type": "application/json" },
     })
     .then(response => response.text())
-    .then(data => alert("Attendance recorded successfully!"))
-    .catch(error => console.error("Error:", error));
+    .then(data => {
+        console.log("Response from server:", data); 
+        alert("Attendance recorded successfully!"); // To confirm submission success
+        location.reload(); // Refresh page to clear inputs after submission
+    })
+    .catch(error => {
+        console.error("Error:", error); // Log errors in the browser console if something fails
+        alert("An error occured! Check console for details.");
+    });
 }
 
 function clockIn() {
