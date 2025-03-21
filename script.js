@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbx2QXTygm9onbh_0qCpuIzAfq5yHPmVX10swloh1ip79m-gratE6SHLnSVu8nqKZ7Ep/exec"
+const scriptURL = "https://scriphttps://script.google.com/macros/s/AKfycbx2QXTygm9onbh_0qCpuIzAfq5yHPmVX10swloh1ip79m-gratE6SHLnSVu8nqKZ7Ep/exect.google.com/macros/s/AKfycbx2QXTygm9onbh_0qCpuIzAfq5yHPmVX10swloh1ip79m-gratE6SHLnSVu8nqKZ7Ep/exec"
 
 function sendAttendance(action) {
     const employeeID = document.getElementById("employeeID").value;
@@ -12,7 +12,10 @@ function sendAttendance(action) {
     fetch(scriptURL, {
         method: "POST",
         body: JSON.stringify({ employeeID, name, action}),
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
+        }
     })
     .then(response => response.text())
     .then(data => {
