@@ -11,7 +11,6 @@ function sendAttendance(action) {
 
     fetch(scriptURL, {
         method: "POST",
-        mode: "cors",  // Important: Enable cross-origin requests
         headers: { 
             "Content-Type": "application/json"
         },
